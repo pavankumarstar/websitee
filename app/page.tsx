@@ -1,9 +1,8 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <h1 className=" text-red-600 font-extrabold">Home</h1>
-    </div>
+    <main>
+      <h1>Welcome to Our Astrology Website</h1>
+      <p>This is the homepage.</p>
+    </main>
   );
 }
