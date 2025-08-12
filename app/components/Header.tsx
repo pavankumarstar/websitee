@@ -17,6 +17,9 @@ export default function Header() {
         { name: "Family Problem", path: "/services/family-problem" },
         { name: "Business Problem", path: "/services/business-problem" },
         { name: "Spiritual Healing", path: "/services/spiritual-healing" },
+        { name: "Evil Eye", path: "/services/evil-eye"},
+        { name: "Negative Energy", path:"/services/negative-energy"},
+        { name: "Health Problem", path:"/services/health-problem"}
     ];
 
     const poojaServices = [
@@ -27,7 +30,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <header className="bg-white shadow-md fixed w-full top-[40px] left-0 z-50">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold text-yellow-600">

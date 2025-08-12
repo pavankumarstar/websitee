@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import FloatingButtons from "./components/home/FloatingButtons";
+import Banner from "./components/home/Banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,10 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
-       <main className="pt-20"> {/* Adjust padding to match Header height */}
-          {children}
-        </main>
+
+        <FloatingButtons />
+        <Banner />
+        <Header className="sticky top-0 w-full z-50" />
+        <main className="pt-[104px]">
+  {children}
+</main>
       </body>
     </html>
   );
