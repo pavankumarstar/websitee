@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import FloatingButtons from "./components/home/FloatingButtons";
-import Banner from "./components/home/Banner";
+
+import Footer from "./components/home/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,12 @@ export default function RootLayout({
       >
 
         <FloatingButtons />
-        <Banner />
-        <Header className="sticky top-0 w-full z-50" />
+        {/* <Banner /> */}
+        <Header  />
         <main className="pt-[104px]">
   {children}
 </main>
+<Footer/>
       </body>
     </html>
   );
