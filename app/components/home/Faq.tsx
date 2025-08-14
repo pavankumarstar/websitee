@@ -40,7 +40,7 @@ export default function Faq() {
 
   return (
     <div
-      className="relative min-h-screen overflow-hidden px-4 py-16 text-white"
+      className="relative min-h-screen overflow-hidden px-4 py-16 text-white "
       style={{
         backgroundImage:
           "url('/images/home/faqbk.jpg')",

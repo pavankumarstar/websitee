@@ -10,12 +10,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 const services = [
-  { title: "Love Marriage", img: "/images/service/Lovemarriage.jpg" },
-  { title: "Black Magic Removal", img: "/images/service/Black.jpg" },
-  { title: "Business Problem", img: "/images/service/Business.jpg" },
-  { title: "Tarot Reading", img: "/images/service/taro.jpg" },
-  { title: "Palm Reading", img: "/images/service/palm.jpg" },
-  { title: "Love Problem", img: "/images/service/loveproblem.jpg" },
+  { title: "Love Marriage", img: "/images/home/hone.jpg" },
+  { title: "Black Magic Removal", img: "/images/home/htwo.jpg" },
+  { title: "Business Problem", img: "/images/home/hthree.jpg" },
+  { title: "Tarot Reading", img: "/images/home/hfour.jpg" },
+  { title: "Palm Reading", img: "/images/home/hfive.jpg" },
+  { title: "Love Problem", img: "/images/home/hsix.jpg" },
 ];
 
 export default function ServicesShowcase() {
@@ -24,17 +24,17 @@ export default function ServicesShowcase() {
   return (
     <section className="bg-gradient-to-b from-orange-50 to-white py-16 px-4 relative overflow-hidden">
       <div
-    className="absolute inset-0 flex justify-center items-center pointer-events-none"
-  >
-    <div
-      className="bg-[url('/images/home/section.png')] bg-center bg-no-repeat bg-contain opacity-10 w-full h-full"
-    ></div>
-  </div>
+        className="absolute inset-0 flex justify-center items-center pointer-events-none"
+      >
+        <div
+          className="bg-[url('/images/home/section.png')] bg-center bg-no-repeat bg-contain opacity-10 w-full h-full"
+        ></div>
+      </div>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative">
 
         {/* LEFT - Layered Carousel */}
         <motion.div
-          className="relative flex justify-center md:justify-end items-center w-full"
+          className="relative flex justify-center md:justify-end items-center w-full ml-[-30px] md:ml-0"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -167,46 +167,46 @@ export default function ServicesShowcase() {
               </motion.button>
             </Link>
           </motion.div>
-         {/* Emergency Contact Box */}
-<a href="tel:+1(929) 513-3283">
-  <motion.div
-    className="mt-12 flex items-center gap-4 bg-blue-950 p-4 rounded-lg shadow-lg max-w-sm mx-auto md:mx-0 transition"
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 1 }}
-  >
-    <div className="bg-orange-500 p-3 rounded-full flex items-center justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        className="w-6 h-6 text-white"
-      >
-        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-.91 1c-9.39.49-17-7.12-16.51-16.51A1 1 0 018 2.5h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
-      </svg>
-    </div>
-    <div className="flex flex-col gap-2">
-      <p className="text-white text-sm">Emergency Contact</p>
-      <p className="text-white font-bold text-lg">+1(929) 513-3283</p>
-      <div className="flex gap-2">
-        <a
-          href="tel:19295133283"
-          className="inline-block px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-semibold hover:bg-blue-700 transition"
-        >
-          Call Now
-        </a>
-        <a
-          href="https://wa.me/19295133283"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-3 py-1 bg-green-500 text-white rounded-full text-xs font-semibold hover:bg-green-600 transition"
-        >
-          WhatsApp
-        </a>
-      </div>
-    </div>
-  </motion.div>
-</a>
+          {/* Emergency Contact Box */}
+          <a href="tel:+1(929) 513-3283">
+            <motion.div
+              className="mt-12 flex items-center gap-4 bg-blue-950 p-4 rounded-lg shadow-lg max-w-sm mx-auto md:mx-0 transition"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 }}
+            >
+              <div className="bg-orange-500 p-3 rounded-full flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6 text-white"
+                >
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-.91 1c-9.39.49-17-7.12-16.51-16.51A1 1 0 018 2.5h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+                </svg>
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-white text-sm">Emergency Contact</p>
+                <p className="text-white font-bold text-lg">+1(929) 513-3283</p>
+                <div className="flex gap-2">
+                  <a
+                    href="tel:19295133283"
+                    className="inline-block px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-semibold hover:bg-blue-700 transition"
+                  >
+                    Call Now
+                  </a>
+                  <a
+                    href="https://wa.me/19295133283"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-3 py-1 bg-green-500 text-white rounded-full text-xs font-semibold hover:bg-green-600 transition"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </a>
 
 
         </div>

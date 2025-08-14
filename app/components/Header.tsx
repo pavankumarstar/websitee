@@ -73,19 +73,22 @@ export default function Header() {
       </div>
 
       {/* Main Nav */}
-      <div className="bg-white/70 backdrop-blur-sm">
+      <div className="bg-white/70 ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo.png"
-              alt="Logo"
-              width={48}
-              height={48}
-              className="h-10 w-auto md:h-17 object-contain"
-              priority
-            />
-          </Link>
+  <Image
+    src="/images/logo.png"
+    alt="Logo"
+    width={927}
+    height={269}
+    priority
+    className="
+      w-full max-w-[200px] h-auto object-contain md:h-20   /* desktop size */
+      sm:w-full sm:max-w-none sm:object-left      /* mobile: full width, align left */
+    "
+  />
+</Link>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 items-center">
