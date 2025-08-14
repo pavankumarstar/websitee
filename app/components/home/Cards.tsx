@@ -38,13 +38,13 @@ const items = [
 	{
 		title: "Business Problem",
 		img: "/images/service/Business.jpg",
-		link: "/services/business-problems",
+		link: "/services/business-problem",
 		desc: "Expert guidance on business problems.",
 	},
 	{
 		title: "Family Problem",
 		img: "/images/service/family.jpg",
-		link: "/services/family-problems",
+		link: "/services/family-problem",
 		desc: "Expert guidance on family problems.",
 	},
 	{
@@ -56,7 +56,7 @@ const items = [
 	{
 		title: "Palm Reading",
 		img: "/images/service/palm.jpg",
-		link: "/services/palm-reading",
+		link: "/services/Plam-reading",
 		desc: "Expert guidance on palm reading.",
 	},
 	{
