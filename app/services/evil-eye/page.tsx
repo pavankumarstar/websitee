@@ -3,12 +3,6 @@ import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
 
-const buttonLabels = [
-  "What is Evil Eye?",
-  "Symptoms & Impact",
-  "Astrological Remedies",
-  "Protective Measures",
-];
 
 const contentData = [
   {
@@ -56,13 +50,20 @@ const contentData = [
   },
 ];
 
+const title = "Evil Eye Protection";
+const bannerImage = "/images/services/evil-eye-banner.jpg"; // Update this path as needed
+
 const EvilEye: React.FC = () => {
   return (
     <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
   );
 };

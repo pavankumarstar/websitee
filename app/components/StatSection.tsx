@@ -145,71 +145,7 @@ const StatSection = () => {
 			</Swiper>
 
 			{/* Contact Bar */}
-			<div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-6 bg-[#18143a] bg-opacity-80 rounded-2xl shadow-lg px-8 py-6 max-w-2xl mx-auto">
-				<a
-					href="mailto:psychicsaikrishna46@gmail.com"
-					className="flex items-center gap-2 text-yellow-300 hover:text-yellow-400 transition font-semibold"
-				>
-					<svg
-						className="w-5 h-5"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth={2}
-						viewBox="0 0 24 24"
-					>
-						<path d="M4 4h16v16H4z" stroke="none" />
-						<path d="M4 4l8 8 8-8" />
-					</svg>
-					psychicsaikrishna46@gmail.com
-				</a>
-				<a
-					href="tel:19295133283"
-					className="flex items-center gap-2 text-green-300 hover:text-green-400 transition font-semibold"
-				>
-					<svg
-						className="w-5 h-5"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth={2}
-						viewBox="0 0 24 24"
-					>
-						<path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z" />
-					</svg>
-					+1 (929) 513-3283
-				</a>
-				<a
-					href="https://wa.me/19295133283"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 text-green-400 hover:text-green-500 transition font-semibold"
-				>
-					<svg
-						className="w-5 h-5"
-						fill="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path d="M20.52 3.48A12 12 0 0 0 3.48 20.52l-1.32 4.84a1 1 0 0 0 1.22 1.22l4.84-1.32A12 12 0 1 0 20.52 3.48zm-8.52 17a10 10 0 1 1 10-10 10 10 0 0 1-10 10zm5.29-7.71l-2.54-1.09a1 1 0 0 0-1.13.21l-.54.54a7.72 7.72 0 0 1-3.36-3.36l.54-.54a1 1 0 0 0 .21-1.13l-1.09-2.54a1 1 0 0 0-1.13-.54A8.94 8.94 0 0 0 7 12a9 9 0 0 0 9 9 8.94 8.94 0 0 0 3.36-.54 1 1 0 0 0-.54-1.13z" />
-					</svg>
-					WhatsApp
-				</a>
-				<a
-					href="mailto:psychicsaikrishna46@gmail.com?subject=Suggestion"
-					className="flex items-center gap-2 text-indigo-300 hover:text-indigo-400 transition font-semibold"
-				>
-					<svg
-						className="w-5 h-5"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth={2}
-						viewBox="0 0 24 24"
-					>
-						<path d="M12 20h9" />
-						<path d="M12 4v16" />
-						<path d="M4 4h16v16H4z" stroke="none" />
-					</svg>
-					Send Suggestion
-				</a>
-			</div>
+			
 		</section>
 	);
 };

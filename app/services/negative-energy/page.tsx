@@ -3,12 +3,6 @@ import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
 
-const buttonLabels: string[] = [
-  "Understanding Negative Energy",
-  "How It Affects You",
-  "Astrological Healing",
-  "Daily Energy Boosters",
-];
 
 interface ContentItem {
   header: string;
@@ -65,13 +59,20 @@ const contentData: ContentItem[] = [
   },
 ];
 
+const title = "Negative Energy Removal";
+const bannerImage = "/images/services/negative-energy-banner.jpg"; // Update this path as needed
+
 const NegativeEnergy: React.FC = () => {
   return (
     <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
   );
 };

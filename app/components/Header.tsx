@@ -12,6 +12,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -76,7 +77,14 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/images/logo.png" alt="Logo" className="h-10 w-auto md:h-17 object-contain" />
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={48}
+              height={48}
+              className="h-10 w-auto md:h-17 object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}

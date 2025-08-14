@@ -7,6 +7,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { Swiper as SwiperType } from "swiper";
+import Image from "next/image";
 
 const items = [
 	{
@@ -72,7 +74,7 @@ const items = [
 ];
 
 export default function Cards() {
-	const swiperRef = useRef(null);
+	const swiperRef = useRef<SwiperType | null>(null);
 
 	return (
 		<div className="relative z-10 bg-gradient-to-b from-orange-50 to-white py-14 px-4 md:px-8">
@@ -114,12 +116,14 @@ export default function Cards() {
 						>
 							<div className="bg-white/60 backdrop-blur-xl rounded-3xl overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 shadow-xl border-l-4 border-yellow-400">
 								{/* Image */}
-								<div className="relative w-full h-48 overflow-hidden">
-									<img
+								<div className="relative w-full h-48">
+									<Image
 										src={item.img}
-										alt={`Astrology Service: ${item.title}`}
+										alt={item.title}
+										fill
+										className="object-cover rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, 33vw"
 										loading="lazy"
-										className="w-full h-full object-cover rounded-t-3xl hover:scale-110 transition-transform duration-500"
 									/>
 								</div>
 

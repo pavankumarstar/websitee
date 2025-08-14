@@ -3,13 +3,8 @@ import Faq from "@/app/components/home/Faq";
 import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
-
-const buttonLabels = [
-  "Facing Opposition?",
-  "Astrological Conflicts",
-  "Solutions We Offer",
-  "Strengthen Your Bond",
-];
+const title = "Love Marriage Solutions";
+const bannerImage = "/images/services/love-marriage-banner.jpg"; // Update this path as needed
 
 const contentData = [
   {
@@ -61,10 +56,14 @@ const contentData = [
 export default function LoveMarriage() {
   return (
     <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
   );
 }

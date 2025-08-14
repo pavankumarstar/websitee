@@ -1,6 +1,5 @@
 import Link from "next/link";
 import StatsSection from "../components/about/StatsSection";
-import Breadcrumb from "../components/Breadcrumb";
 import Faq from "../components/home/Faq";
 import About from "../components/about/About";
 

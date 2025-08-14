@@ -2,13 +2,6 @@ import Faq from '@/app/components/home/Faq';
 import SectionService from '@/app/components/service/SectionService';
 import React from 'react';
 
-const buttonLabels = [
-  'Business Challenges',
-  'Causes of Failure',
-  'Astrological Remedies',
-  'Success Strategies',
-];
-
 const contentData = [
   {
     header: 'Business Challenges',
@@ -56,15 +49,21 @@ const contentData = [
   },
 ];
 
+const title = 'Business Problem Solutions';
+const bannerImage = '/images/services/business-problem-banner.jpg'; // Update path as needed
+
 const Business: React.FC = () => {
   return (
     <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
-  
   );
 };
 

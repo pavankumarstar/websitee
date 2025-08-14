@@ -3,14 +3,6 @@ import Faq from "@/app/components/home/Faq";
 import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
-
-const buttonLabels: string[] = [
-  "What is Black Magic?",
-  "Symptoms",
-  "Removal Process",
-  "Protection Techniques",
-];
-
 const contentData = [
   {
     header: "What is Black Magic?",
@@ -58,13 +50,20 @@ const contentData = [
   },
 ];
 
+const title = "Black Magic Removal";
+const bannerImage = "/images/services/black-magic-banner.jpg"; // Update path as needed
+
 const BlackMagic: React.FC = () => {
   return (
     <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
   );
 };

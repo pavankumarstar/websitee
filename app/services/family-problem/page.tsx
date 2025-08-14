@@ -3,12 +3,6 @@ import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
 
-const buttonLabels = [
-  "Root of Conflicts",
-  "Astrological Causes",
-  "Spiritual Solutions",
-  "Peaceful Living",
-];
 
 const contentData = [
   {
@@ -57,13 +51,20 @@ const contentData = [
   },
 ];
 
+const title = "Family Problem Solutions";
+const bannerImage = "/images/services/family-problem-banner.jpg"; // Update this path as needed
+
 const FamilyProblems = () => {
   return (
-   <div className="bg-white">
-      <SectionService  contentData={contentData} />
-     <div className="mt-2">
-               <Faq />
-             </div>
+    <div className="bg-white">
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
+      <div className="mt-2">
+        <Faq />
+      </div>
     </div>
   );
 };

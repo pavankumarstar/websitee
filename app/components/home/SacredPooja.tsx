@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa"; // Add this import
+import Image from "next/image";
 
 const poojaData = [
   {
@@ -89,10 +90,13 @@ export default function SacredPooja() {
           >
             {/* Image with overlay */}
             <div className="relative h-56">
-              <img
+              <Image
                 src={pooja.image}
                 alt={pooja.title}
+                fill
                 className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority={index === 0}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <h3 className="text-lg font-semibold text-white">

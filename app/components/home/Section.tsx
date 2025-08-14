@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { useState } from "react";
+import Image from "next/image";
 
 const services = [
   { title: "Love Marriage", img: "/images/service/Lovemarriage.jpg" },
@@ -58,12 +59,16 @@ export default function ServicesShowcase() {
           >
             {services.map((service, idx) => (
               <SwiperSlide key={idx}>
-                <img
-                  src={service.img}
-                  alt={`Service: ${service.title}`}
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
+                <div className="relative w-full h-80">
+                  <Image
+                    src={service.img}
+                    alt={`Service: ${service.title}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    loading="lazy"
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

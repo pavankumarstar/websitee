@@ -3,12 +3,6 @@ import SectionService from '@/app/components/service/SectionService';
 import React from 'react';
 
 
-const buttonLabels = [
-  'Common Love Issues',
-  'Astrological Reasons',
-  'Spiritual Remedies',
-  'Rekindle Your Love',
-];
 
 const contentData = [
   {
@@ -57,10 +51,17 @@ const contentData = [
   },
 ];
 
+const title = "Love Problem Solutions";
+const bannerImage = "/images/services/love-problem-banner.jpg"; // Update this path as needed
+
 const LoveProblem = () => {
   return (
    <div className="bg-white">
-      <SectionService  contentData={contentData} />
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
      <div className="mt-2">
                <Faq />
              </div>

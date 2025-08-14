@@ -61,10 +61,17 @@ const contentData = [
   }
 ];
 
+const title = "Palm Reading";
+const bannerImage = "/images/services/palm-reading-banner.jpg"; // Update this path as needed
+
 const PalmReading = () => {
   return (
    <div className="bg-white">
-      <SectionService  contentData={contentData} />
+      <SectionService
+        contentData={contentData}
+        title={title}
+        bannerImage={bannerImage}
+      />
      <div className="mt-2">
                <Faq />
              </div>
