@@ -67,10 +67,11 @@ const contentData: ContentItem[] = [
 
 const NegativeEnergy: React.FC = () => {
   return (
-    <div className="space-y-12">
-      <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-      <Faq />
- 
+    <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

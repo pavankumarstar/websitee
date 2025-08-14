@@ -58,12 +58,11 @@ const contentData = [
 
 const HealthProblem: React.FC = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-gray-50">
-      <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-      <div className="w-full bg-white py-10">
-        <Faq />
-      </div>
-      
+   <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

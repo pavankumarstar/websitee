@@ -40,26 +40,34 @@ export default function Faq() {
 
   return (
     <div
-      className="relative min-h-screen overflow-hidden px-4 py-16 text-black"
+      className="relative min-h-screen overflow-hidden px-4 py-16 text-white"
       style={{
         backgroundImage:
-          "url('https://i.pinimg.com/736x/30/24/a9/3024a9c76ff279250a602dfabfebfa57.jpg')",
+          "url('/images/home/faqbk.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className="mx-auto max-w-6xl">
+      {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+
+      <div className="relative mx-auto max-w-6xl">
         {/* Heading */}
         <motion.h1
-          className="text-3xl font-bold mb-6 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          className="text-4xl sm:text-5xl font-bold mb-4 text-center"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           Our Astrologer Progress
         </motion.h1>
+        <p className="text-center max-w-2xl mx-auto text-gray-200 text-sm sm:text-base">
+          Guided by deep spiritual knowledge and years of experience, Master Krishna Sai offers
+          transformative solutions that change lives for the better.
+        </p>
 
-        <div className="flex flex-wrap gap-8 mt-8">
+        <div className="flex flex-wrap gap-10 mt-12 items-start">
           {/* Left Image */}
           <motion.div
             className="flex-1 min-w-[300px] max-w-[500px]"
@@ -69,9 +77,9 @@ export default function Faq() {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           >
             <img
-              src="/images/home/faq.jpg"
+              src="/images/faq.jpg"
               alt="Astrology"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg shadow-xl border border-white/20"
             />
           </motion.div>
 
@@ -83,12 +91,12 @@ export default function Faq() {
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           >
-            <h2 className="text-lg font-extrabold">Questions (FAQ’s)</h2>
-            <div className="mt-4 space-y-4">
+            <h2 className="text-xl font-extrabold mb-4">Questions (FAQ’s)</h2>
+            <div className="space-y-4">
               {faqData.map((faq, index) => (
                 <motion.div
                   key={index}
-                  className="rounded-md bg-white/90 p-4 cursor-pointer shadow-sm hover:shadow-md transition"
+                  className="rounded-lg bg-white/10 backdrop-blur-md border border-white/20 p-4 cursor-pointer shadow-lg hover:bg-white/15 transition"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -98,14 +106,12 @@ export default function Faq() {
                     damping: 15,
                     delay: index * 0.1,
                   }}
+                  onClick={() => toggleAccordion(index)}
                 >
-                  <div
-                    className="flex justify-between items-center font-bold"
-                    onClick={() => toggleAccordion(index)}
-                  >
+                  <div className="flex justify-between items-center font-semibold text-white">
                     {faq.question}
                     <motion.span
-                      className="ml-2 text-xl font-bold"
+                      className="ml-2 text-xl font-bold text-orange-400"
                       animate={{ rotate: activeIndex === index ? 45 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
@@ -116,7 +122,7 @@ export default function Faq() {
                   <AnimatePresence>
                     {activeIndex === index && (
                       <motion.div
-                        className="mt-2 text-sm leading-relaxed"
+                        className="mt-2 text-sm text-gray-200 leading-relaxed"
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}

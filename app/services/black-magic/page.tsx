@@ -1,4 +1,5 @@
 "use client";
+import Faq from "@/app/components/home/Faq";
 import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
@@ -60,8 +61,10 @@ const contentData = [
 const BlackMagic: React.FC = () => {
   return (
     <div className="bg-white">
-      <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-     
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

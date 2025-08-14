@@ -20,19 +20,21 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full overflow-hidden">
+      {/* Slides */}
       <div
-        className="flex transition-transform duration-700"
+        className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="relative w-full flex-shrink-0 h-[500px]"
+            className="relative w-full flex-shrink-0 h-[250px] sm:h-[350px] md:h-[500px] lg:h-[650px]"
           >
             <Image
               src={slide.src}
               alt={slide.alt}
               fill
+              sizes="100vw"
               className="object-cover"
               priority={idx === 0}
             />
@@ -43,7 +45,7 @@ export default function Carousel() {
       {/* Prev Button */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 sm:p-3 rounded-full transition"
       >
         ❮
       </button>
@@ -51,7 +53,7 @@ export default function Carousel() {
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 sm:p-3 rounded-full transition"
       >
         ❯
       </button>

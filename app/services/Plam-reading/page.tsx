@@ -63,19 +63,11 @@ const contentData = [
 
 const PalmReading = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 py-10 space-y-12">
-      <SectionService
-        buttonLabels={[
-          "The Lines",
-          "The Hands",
-          "The Fingers",
-          "Scan your palm",
-          "Read your palm"
-        ]}
-        contentData={contentData}
-      />
-      <Faq />
-     
+   <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

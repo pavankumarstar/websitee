@@ -49,7 +49,7 @@ const contentData = [
     paragraph1:
       'With astrological support, you can rebuild trust, harmony, and affection. Astrology can offer insights and remedies for rekindling love and resolving love-related problems by examining planetary positions, particularly Venus, and other relevant houses in a birth chart. It can help understand compatibility, identify potential obstacles, and suggest personalized solutions to improve relationships.',
     imageSrc:
-      'https://i-media.vyaparify.com/vcards/blogs/66363/service_1719401165.png',
+      'https://i.pinimg.com/736x/3c/27/4f/3c274f86d413a77e7a23e923e9e8d79a.jpg',
     paragraph2:
       'Get guidance to reunite with your partner or attract new love. Astrological remedies can be used to overcome obstacles and reunite with a lost love by understanding the influence of planets like Venus and Mars. Specific planetary combinations and placements can highlight potential obstacles in a relationship, such as communication issues, lack of intimacy, or external influences.',
     paragraph3:
@@ -59,16 +59,11 @@ const contentData = [
 
 const LoveProblem = () => {
   return (
-    <div className="bg-pink-50 py-12">
-      <div className="container mx-auto px-4">
-        <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-
-        <div className="mt-16">
-          <Faq />
-        </div>
-
-       
-      </div>
+   <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

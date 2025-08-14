@@ -60,19 +60,11 @@ const contentData = [
 
 export default function LoveMarriage() {
   return (
-    <div className="bg-white text-gray-900">
-      {/* Section Service */}
-      <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-
-      {/* FAQ Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <Faq />
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      
+    <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 }

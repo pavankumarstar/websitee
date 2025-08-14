@@ -16,7 +16,6 @@ import { MdEmail } from "react-icons/md";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [poojaOpen, setPoojaOpen] = useState(false);
 
   const services = [
     { name: "Palm Reading", path: "/services/Plam-reading" },
@@ -30,19 +29,11 @@ export default function Header() {
     { name: "Health Problem", path: "/services/health-problem" },
   ];
 
-  const poojaServices = [
-    { name: "Shiva Pooja", path: "/pooja/shiva" },
-    { name: "Ganesh Pooja", path: "/pooja/ganesh" },
-    { name: "Kali Pooja", path: "/pooja/kali" },
-    { name: "Krishna Pooja", path: "/pooja/krishna" },
-  ];
-
   return (
-    <header className="fixed w-full top-0 left-0 z-50 shadow-md">
-      {/* Top Banner */}
-      <div className="bg-gradient-to-r from-[#0b0730] to-[#0d093f] text-white text-xs md:text-sm h-auto py-2 px-4">
+    <header className="sticky top-0 z-50 shadow-md bg-white/70 backdrop-blur-sm">
+      {/* Top Contact Bar */}
+      <div className="hidden md:block bg-gradient-to-r from-[#0b0730] to-[#0d093f] text-white text-xs md:text-sm py-2 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-          {/* Left Section */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
             <div className="flex items-center gap-1">
               <FaMapMarkerAlt className="text-purple-400" />
@@ -50,10 +41,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-1">
               <MdEmail className="text-purple-400" />
-              <a
-                href="mailto:psychicsaikrishna46@gmail.com"
-                className="hover:underline"
-              >
+              <a href="mailto:psychicsaikrishna46@gmail.com" className="hover:underline">
                 psychicsaikrishna46@gmail.com
               </a>
             </div>
@@ -65,39 +53,18 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Right Section */}
           <div className="flex items-center gap-2">
-            <span className="hidden md:inline">Social Media :</span>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-400"
-            >
+            <span className="sm:hidden md:inline">Social Media :</span>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaFacebookF />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-400"
-            >
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaTwitter />
             </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-400"
-            >
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaYoutube />
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-400"
-            >
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaInstagram />
             </a>
           </div>
@@ -105,134 +72,80 @@ export default function Header() {
       </div>
 
       {/* Main Nav */}
-      <div className="bg-white">
+      <div className="bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-yellow-600">
-            🔮 MyAstro
+          <Link href="/" className="flex items-center">
+            <img src="/images/logo.png" alt="Logo" className="h-10 w-auto md:h-17 object-contain" />
           </Link>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 items-center">
-            <Link href="/" className="hover:text-yellow-600">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-yellow-600">
-              About us
-            </Link>
+            <Link href="/" className="hover:text-yellow-600">Home</Link>
+            <Link href="/about" className="hover:text-yellow-600">About us</Link>
 
-            {/* Services Dropdown */}
             <div className="group relative">
-              <button className="hover:text-yellow-600 transition-colors duration-200">
-                Services
-              </button>
+              <button className="hover:text-yellow-600 transition-colors duration-200">Services</button>
               <div className="absolute right-0 hidden group-hover:grid grid-cols-4 gap-x-8 gap-y-3 p-3 bg-white shadow-lg w-[650px]">
                 {services.map((s) => (
-                  <Link
-                    key={s.name}
-                    href={s.path}
-                    className="hover:text-yellow-600 transition-colors duration-200 block"
-                  >
-                    {s.name}
-                  </Link>
+                  <Link key={s.name} href={s.path} className="hover:text-yellow-600 block">{s.name}</Link>
                 ))}
               </div>
             </div>
 
-            {/* Pooja Dropdown */}
-            <div className="group relative">
-              <button className="hover:text-yellow-600 transition-colors duration-200">
-                Pooja Services
-              </button>
-              <div className="absolute right-0 hidden group-hover:grid grid-cols-4 gap-x-8 gap-y-3 p-3 bg-white shadow-lg w-[650px]">
-                {poojaServices.map((p) => (
-                  <Link
-                    key={p.name}
-                    href={p.path}
-                    className="hover:text-yellow-600 transition-colors duration-200 block"
-                  >
-                    {p.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <Link href="/contact" className="hover:text-yellow-600">
-              Contact
-            </Link>
+            <Link href="/contact" className="hover:text-yellow-600">Contact</Link>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-yellow-600"
-          >
+          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-yellow-600">
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Slide-Out Menu */}
-      {menuOpen && (
-        <div className="fixed top-0 left-0 h-full w-[70%] bg-white shadow-lg p-4 space-y-4 z-50 overflow-y-auto">
-          <Link href="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
-            About
-          </Link>
+      {/* Mobile Slide-Down Menu */}
+      {/* Overlay */}
+      <div
+        className={`fixed inset-0 bg-black/50 z-[99] transition-opacity duration-300 ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        onClick={() => setMenuOpen(false)}
+      ></div>
 
+      {/* Menu panel */}
+      <div
+        className={`fixed top-0 left-0 w-full h-screen bg-white shadow-lg p-4 z-[100] overflow-y-auto border-b border-gray-300 transition-transform duration-300 transform ${menuOpen ? "translate-y-0" : "-translate-y-full"}`}
+      >
+        {/* Close button */}
+        <button
+          className="absolute top-4 right-4 text-gray-700"
+          onClick={() => setMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <X size={28} />
+        </button>
+        <div className="flex flex-col gap-3 mt-14">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="block py-2">Home</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)} className="block py-2">About</Link>
           {/* Services Accordion */}
           <div>
             <button
-              className="font-semibold w-full text-left"
+              className="font-semibold w-full text-left py-2"
               onClick={() => setServicesOpen(!servicesOpen)}
             >
               Services {servicesOpen ? "▲" : "▼"}
             </button>
             {servicesOpen && (
-              <div className="pl-4 space-y-2 mt-2">
+              <div className="pl-4 flex flex-col gap-2 mt-2">
                 {services.map((s) => (
-                  <Link
-                    key={s.name}
-                    href={s.path}
-                    onClick={() => setMenuOpen(false)}
-                  >
+                  <Link key={s.name} href={s.path} onClick={() => setMenuOpen(false)} className="block py-1">
                     {s.name}
                   </Link>
                 ))}
               </div>
             )}
           </div>
-
-          {/* Pooja Accordion */}
-          <div>
-            <button
-              className="font-semibold w-full text-left"
-              onClick={() => setPoojaOpen(!poojaOpen)}
-            >
-              Pooja Services {poojaOpen ? "▲" : "▼"}
-            </button>
-            {poojaOpen && (
-              <div className="pl-4 space-y-2 mt-2">
-                {poojaServices.map((p) => (
-                  <Link
-                    key={p.name}
-                    href={p.path}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {p.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <Link href="/contact" onClick={() => setMenuOpen(false)}>
-            Contact
-          </Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="block py-2">Contact</Link>
         </div>
-      )}
+      </div>
     </header>
   );
 }

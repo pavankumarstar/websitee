@@ -1,3 +1,4 @@
+import Faq from '@/app/components/home/Faq';
 import SectionService from '@/app/components/service/SectionService';
 import React from 'react';
 
@@ -57,13 +58,12 @@ const contentData = [
 
 const Business: React.FC = () => {
   return (
-    <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-10">
-        <SectionService buttonLabels={buttonLabels} contentData={contentData} />
-      </div>
-
-      
-      </div>
+    <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
+    </div>
   
   );
 };

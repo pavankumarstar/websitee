@@ -1,3 +1,4 @@
+import Faq from "@/app/components/home/Faq";
 import SectionService from "@/app/components/service/SectionService";
 import React from "react";
 
@@ -58,14 +59,11 @@ const contentData = [
 
 const FamilyProblems = () => {
   return (
-    <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <SectionService
-          buttonLabels={buttonLabels}
-          contentData={contentData}
-        />
-      </div>
-     
+   <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };

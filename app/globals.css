@@ -27,3 +27,88 @@ body {
   color: var(--foreground);
   font-family: 'Open Sans', sans-serif;
 }
+.swiper-pagination-bullet {
+  background-color: #4f46e5; /* Tailwind indigo-600 */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #818cf8; /* Tailwind indigo-400 */
+}
+
+@keyframes bg-pan {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: center 20px; /* moves slightly down */
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.bg-pan {
+  animation: bg-pan 10s ease-in-out infinite;
+}
+
+@keyframes bg-zoom-pan {
+  0% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 105%;
+    background-position: center 20px;
+  }
+  100% {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+.bg-zoom-pan {
+  animation: bg-zoom-pan 15s ease-in-out infinite;
+}
+@keyframes bg-zoom-pan {
+  0% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 105%;
+    background-position: center 20px;
+  }
+  100% {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+.bg-zoom-pan {
+  animation: bg-zoom-pan 15s ease-in-out infinite;
+}
+
+@keyframes text-fade-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(0.97) translateY(5px);
+  }
+}
+
+.text-fade-scale {
+  animation: text-fade-scale 15s ease-in-out infinite;
+}

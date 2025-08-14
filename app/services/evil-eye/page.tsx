@@ -58,24 +58,11 @@ const contentData = [
 
 const EvilEye: React.FC = () => {
   return (
-    <div className="bg-gray-50">
-      {/* Main section */}
-      <div className="max-w-7xl mx-auto px-4 py-10">
-        <SectionService
-          buttonLabels={buttonLabels}
-          contentData={contentData}
-        />
-      </div>
-
-      {/* FAQ Section */}
-      <div className="bg-white py-10">
-        <div className="max-w-6xl mx-auto px-4">
-          <Faq />
-        </div>
-      </div>
-
-      {/* Testimonials Section */}
-      
+    <div className="bg-white">
+      <SectionService  contentData={contentData} />
+     <div className="mt-2">
+               <Faq />
+             </div>
     </div>
   );
 };
