@@ -1,9 +1,11 @@
 "use client";
+
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Image from "next/image";
 
 const slides = [
   { src: "/images/love1.jpg", alt: "Love Black" },
@@ -12,7 +14,7 @@ const slides = [
 ];
 
 const Carousell: React.FC = () => {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperRef | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!swiperRef.current) return;
@@ -22,9 +24,9 @@ const Carousell: React.FC = () => {
     const mid = rect.width / 2;
 
     if (x < mid) {
-      swiper.slidePrev(); // hover left → go left
+      swiper.slidePrev();
     } else {
-      swiper.slideNext(); // hover right → go right
+      swiper.slideNext();
     }
   };
 
@@ -42,10 +44,13 @@ const Carousell: React.FC = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <img
+            <Image
               src={slide.src}
               alt={slide.alt}
+              width={1920} // native image width
+              height={1080} // native image height
               style={{ width: "100%", height: "auto" }}
+              priority={index === 0} // first image loads faster
             />
           </SwiperSlide>
         ))}
