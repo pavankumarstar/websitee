@@ -18,7 +18,7 @@ const contentData: ContentItem[] = [
     paragraph1:
       "Negative energy surrounds us due to stress, jealousy, past karma, or spiritual imbalance. In astrology, negative energy is often linked to malefic planetary influences, weak planetary placements, or past karmic imbalances. When left unaddressed, these issues can intensify and affect different aspects of life.",
     imageSrc:
-      "https://i.pinimg.com/1200x/19/91/91/199191638315dc78f0ac5ccae8f942dc.jpg",
+      "/images/service/energy/one1.jpg",
     paragraph2:
       "It can enter our lives through people, environments, or personal thoughts. Saturn is a karmic planet, and its Sade Sati or Dhaiya phases can bring financial troubles, mental stress, and delays in important work. Rahu and Ketu are shadow planets associated with illusions and sudden changes. Their negative influence can lead to confusion, stress, and even obstacles in career and relationships.",
     paragraph3:
@@ -29,7 +29,7 @@ const contentData: ContentItem[] = [
     paragraph1:
       "It causes tiredness, mental fog, sudden failures, and broken relationships. In astrology, negative energy can manifest in various ways, impacting different aspects of life depending on planetary influences and karmic imbalances.",
     imageSrc:
-      "https://static.toiimg.com/thumb/msid-119201206,imgsize-33088,width-400,resizemode-4/119201206.jpg",
+      "/images/service/energy/one2.jpg",
     paragraph2:
       "You may feel demotivated, constantly unlucky, or face repeated setbacks. Negative energy can manifest as fatigue, chronic pain, sleep disturbances, and weakened immunity. It can cause anxiety, depression, mood swings, and strained relationships.",
     paragraph3:
@@ -51,7 +51,7 @@ const contentData: ContentItem[] = [
     paragraph1:
       "Burning sage, using essential oils, and listening to spiritual chants uplift your energy. Meditation helps calm the mind, reduce stress, and clear stagnant energy from your aura.",
     imageSrc:
-      "https://jyotishay.com/storage/files/blogs/Untitled%20design%20(1).png",
+      "/images/service/energy/one3.jpg",
     paragraph2:
       "Practice meditation and gratitude rituals for positive flow. Crystals can enhance energy flow, clear blockages, and protect against negativity. Sound healing can balance and boost your aura.",
     paragraph3:

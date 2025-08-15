@@ -103,7 +103,7 @@ export default function Header() {
                 ))}
               </div>
             </div>
-
+            <Link href="/location" className="hover:text-yellow-600">Location</Link>
             <Link href="/contact" className="hover:text-yellow-600">Contact</Link>
           </nav>
 
@@ -154,6 +154,7 @@ export default function Header() {
               </div>
             )}
           </div>
+          <Link href="/location" onClick={() => setMenuOpen(false)} className="block py-2">Location</Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)} className="block py-2">Contact</Link>
         </div>
       </div>

@@ -21,7 +21,7 @@ const contentData = [
     paragraph1:
       'Unfavorable Venus or Mars, Mangal dosha, or Rahu-Ketu influence can cause love turbulence. Astrology suggests that planetary positions and aspects in one’s birth chart can reveal potential reasons for love and relationship problems. These can include issues like delayed marriage, relationship conflicts, or even attracting unhealthy relationships. Specific planetary placements, such as Saturn’s influence on the 5th or 7th house, Mars’s position in certain houses, or the influence of Rahu or Ketu, can indicate potential challenges.',
     imageSrc:
-      'https://whitelotusspirituality.com/wp-content/webp-express/webp-images/uploads/2025/06/Untitled-design-89.png.webp',
+      '/images/service/love/four1.jpg',
     paragraph2:
       'Your 5th and 7th house reveal deep insights into your love destiny. This condition arises when Mars is placed in certain houses in the birth chart and can lead to conflicts and disagreements in relationships. The positions and aspects of planets like Venus (love, relationships), Mars (passion, energy), Saturn (delays, obstacles), and Rahu/Ketu (illusion, karmic influences) can significantly impact romantic life.',
     paragraph3:
@@ -32,7 +32,7 @@ const contentData = [
     paragraph1:
       'We offer love problem solutions through mantra chanting, yantras, and relationship rituals. Astrology offers several spiritual remedies for love problems, including mantra recitation, worship of deities, and fasting, all aimed at attracting positive energy and resolving relationship issues. Analyzing planetary positions in one’s birth chart can reveal the root cause of problems like lack of communication, misunderstandings, or family interference, and suggest appropriate remedies.',
     imageSrc:
-      'https://whitelotusspirituality.com/wp-content/webp-express/webp-images/uploads/2025/08/image-31.png.webp',
+      '/images/service/love/four2.jpg',
     paragraph2:
       'Performing the right pooja at the right time can remove obstacles in love. Worshipping deities like Shiva-Parvati, Lakshmi-Vishnu, or Radha-Krishna is recommended to enhance love and relationships. Chanting specific mantras, particularly those related to Venus (the planet of love) or deities associated with love, can attract positive energy and blessings.',
     paragraph3:

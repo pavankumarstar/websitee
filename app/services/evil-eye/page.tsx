@@ -9,7 +9,7 @@ const contentData = [
     header: "What is Evil Eye?",
     paragraph1:
       "The Evil Eye, or “Drishti”, is a harmful gaze that brings misfortune, jealousy, or sickness. In astrology, it’s seen as a negative energy that can disrupt one’s aura and lead to discomfort, misfortune, or even illness. While not a literal eye, it represents the negative energy projected onto someone, potentially impacting their physical, emotional, mental, and even spiritual well-being.",
-    imageSrc: "https://s3.ap-south-1.amazonaws.com/typof.co/blog/zB5Misxr.jpg",
+    imageSrc: "/images/service/eye/six1.jpg",
     paragraph2:
       "It often comes from those who unconsciously or consciously emit negative energy due to envy. Every culture has a different definition of this term. While skeptics may doubt it, many eventually believe due to personal experiences.",
     paragraph3:
@@ -20,7 +20,7 @@ const contentData = [
     paragraph1:
       "Common signs include headaches, sudden illness, irritability, or misfortune without reason. Symptoms may range from physical ailments to emotional distress, like fatigue, stomach problems, sleep disturbances, and body pain.",
     imageSrc:
-      "https://static.toiimg.com/thumb/msid-107106926,imgsize-67112,width-400,resizemode-4/107106926.jpg",
+      "/images/service/eye/six2.jpg",
     paragraph2:
       "Children may cry excessively, and adults may feel mentally disturbed. Anxiety, depression, difficulty concentrating, and negativity are also common signs.",
     paragraph3:
@@ -31,7 +31,7 @@ const contentData = [
     paragraph1:
       "Our experts use salt rituals, lemon-chili techniques, and black thread remedies. Symbolic rituals and gemstone recommendations aim to neutralize negative energy.",
     imageSrc:
-      "https://staticimg.amarujala.com/assets/images/en.myjyotish.com/2022/02/03/remedies-to-ward-off-evil-eyes_1643894059.jpeg",
+      "/images/service/eye/six3.jpg",
     paragraph2:
       "Special poojas like Nazar Dosh Nivaran and chanting mantras like Hanuman Chalisa strengthen the aura. Black thread or amulets help deflect negative energy.",
     paragraph3:

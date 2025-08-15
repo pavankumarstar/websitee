@@ -21,7 +21,7 @@ const contentData = [
     paragraph1:
       "Malefic Mars causes accidents, Saturn delays healing, Rahu causes addiction. Planetary positions and aspects in one's birth chart are believed to indicate potential health issues. Different planets are associated with specific body parts and systems, and their placement and strength can suggest vulnerabilities or predispositions to certain ailments.",
     imageSrc:
-      "https://www.namoastro.com/blog/wp-content/uploads/2024/01/9-Planets-Associated-Diseases-and-Astrological-Remedies-For-Prevention-1200x900.png",
+      "/images/service/helath/second1.jpg",
     paragraph2:
       "The 6th, 8th, and 12th houses in your chart reflect chronic health issues. Sun is linked to the heart and vitality, while the Moon is associated with mental health and emotions. Malefic planets like Mars and Saturn are often seen as indicators of potential health challenges, while benefic planets like Jupiter are generally associated with good health.",
     paragraph3:
@@ -42,7 +42,7 @@ const contentData = [
     header: "Strengthen Your Health",
     paragraph1:
       "We offer personalized health astrology guidance based on your kundali. Various planetary positions and aspects can indicate potential health issues and remedies for strengthening well-being. Houses like the 6th, 8th, and 12th are key for predictions, while malefic planets like Saturn and Mars can suggest health challenges.",
-    imageSrc: "https://iiag.co.in/media/2194/1740725782.webp",
+    imageSrc: "/images/service/helath/second2.jpg",
     paragraph2:
       "Know favorable times for surgeries, recovery, or immunity boosts. Health astrology is a unique branch of Vedic astrology linking cosmic energies and planetary positions to a person’s health.",
     paragraph3:

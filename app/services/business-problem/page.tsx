@@ -8,7 +8,7 @@ const contentData = [
     paragraph1:
       'Facing constant losses, blocked deals, Owning a business may be demanding, and owners frequently deal with a great deal of pressure and uncertainty. By looking at their birth charts, astrologers may assist businesspeople in better understanding their own emotional and mental tendencies. This increased self-awareness can help with decision-making, stress management, and general wellbeing, which strengthens one’s ability to overcome challenges.',
     imageSrc:
-      'https://miro.medium.com/v2/resize:fit:640/format:webp/1*bnUB4NgXXcycVBSgVnyGGg.jpeg',
+      '/images/service/business/five1.jpg',
     paragraph2:
       'Business obstacles often arise due to hidden cosmic disturbances or negative planetary alignments.Astrologers can offer extra viewpoints when it comes to making important business decisions. They can identify potential hazards and difficulties that could otherwise go undiscovered by examining the astrological indicators connected to a certain decision.',
     paragraph3:
@@ -30,7 +30,7 @@ const contentData = [
     paragraph1:
       'Our astrologers suggest yantras, gemstones, and mantras tailored to your business horoscope.Astrological remedies for business success involve utilizing astrological principles and practices to overcome challenges and enhance prosperity. These remedies often focus on strengthening beneficial planetary influences, mitigating negative planetary effects, and aligning with auspicious timings and directions. ',
     imageSrc:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4EI_5EbKxddS8n1GrTNukGNA-BwndVjGcw&shttps://www.astroscience.com/cdn/shop/articles/lal-kitab-remedies.webp?v=1733296446',
+      '/images/service/business/five2.jpg',
     paragraph2:
       'Special poojas or homams can neutralize negative influences from business charts.Worshipping Goddess Lakshmi on Fridays with white flowers and sweets invites prosperity.  Keeping their idol in the northeast direction of the workplace, lighting a ghee diya, and offering prayers can help remove obstacles. ',
     paragraph3:
@@ -41,7 +41,7 @@ const contentData = [
     paragraph1:
       'Choose auspicious dates for launches or new deals based on your birth chart. Business astrology offers strategies for success by aligning business decisions with astrological insights derived from birth charts and planetary movements. This includes strategic timing for launches and promotions, identifying ideal team members, and understanding industry trends ahead of time. ',
     imageSrc:
-      'https://sohinisastri.com/wp-content/uploads/2024/11/astrologer-calculates-natal-chart-makes-forecast-generative-ai_192745-1611-1-1024x682.webp',
+      '/images/service/business/five3.jpg',
     paragraph2:
       'Implement Vastu-compliant workspace and attract positive energies.By analyzing birth charts and utilizing remedies like gemstone therapy and Vedic fire rituals, businesses can navigate challenges and enhance their prospects. ',
     paragraph3:

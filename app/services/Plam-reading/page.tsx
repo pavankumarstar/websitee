@@ -9,7 +9,7 @@ const contentData = [
       "The arc of the life line deﬁnes the root of the thumb, which is the mount of the Sun, the reservoir of our vitality. The larger the arc, the stronger that person’s natural physical reserves—the tanks are full, and the owner has a deep well of energy, stamina, and enthusiasm to share with the world. The depth of the life line describes the quality of our physical vitality, the conduit of our energy out into the world. A deep life line indicates that the owner has a powerful ability to express her energy, and every opportunity to live a long and successful life. She may be impatient with lesser mortals who tire more easily, and be inclined to pour all that energy into her temperament or temper. To balance: Some of this vitality can be worked out physically, and it would be a good idea to cultivate patience, as well as empathy with those gifted with subtler energy.",
     header: "Does Each Lines Carry Its Own Meaning?",
     imageSrc:
-      "https://www.webstrot.com/html/tm/astrologer/light_version/images/content/kundali/hand_img.jpg",
+      "/images/service/plam/one1.jpg",
     paragraph2:
       "It begins where the story of our psyche begins, connected to our childhood at the root of our life line, and is found between thumb and foreﬁnger. The length of the head line does not show how intelligent we are but the breadth of our interests. Its arc and depth describe the power and attitude of the mind. ",
     paragraph3:
@@ -20,7 +20,7 @@ const contentData = [
       "People with water hands have long, rectangular palms and long fingers. Water hands are typically graceful and delicate. Their palms are usually narrow and covered with thin, fine lines. People with water hands often have soft, shiny skin that is sometimes clammy or damp to the touch. The zodiac signs are also based on the elements, but your hand shape and astrological sign might not match up. If you’re a fiery Leo and have water hands, that’s completely normal; it just adds to the interesting makeup of who you are!",
     header: "Hands Carry Its Own Meaning?",
     imageSrc:
-      "https://www.wikihow.com/images/thumb/d/d9/Types-of-Hands-Step-1-Version-2.jpg/v4-728px-Types-of-Hands-Step-1-Version-2.jpg.webp",
+      "/images/service/plam/one2.jpg",
     paragraph2:
       "Earth hands have square palms and short fingers. These hands typically look squished or compressed and are wider rather than narrow. People with earth hands usually have thicker skin that is rough or coarse to the touch. They also have very few lines on their palms.People with earth hands are strong-willed, practical, and reliable. These are no-nonsense people who usually prefer to stick to what they know. They are kind though, and are usually the people you turn to when you need advice or a helping hand. People with earth hands are concerned with the here and now and have their feet planted firmly on the ground.",
     paragraph3:
@@ -31,7 +31,7 @@ const contentData = [
       "If your Index finger is longer than your Ring finger, then you are a leader who is quick to take charge of any situation. You are a confident and resourceful person who shines at leading the way. You are also found to be resourceful and quite good at giving advice. You are even-tempered. You are not the kind who will any decision on a whim. You are an analytical, goal-oriented, and far-sighted person. People look upto you for the right answers. You are quite wary of your actions too as they usually have a big impact on the people following you.",
     header: "THE SPACES BETWEEN YOUR FINGERS?",
     imageSrc:
-      "https://www.webstrot.com/html/tm/astrologer/light_version/images/content/kundali/hand_img3.jpg",
+      "/images/service/plam/one3.jpg",
     paragraph2:
       "f your Index finger and Ring finger are the same length, then you are a person who leads a balanced life. You are a caring, faithful, gentle, and well-organized individual. You give a warm vibe who is also known to be a good listener. You gain pleasure in helping others and listening to their problems. Others feel comfortable, recognized, and appreciated in your presence. You are mostly found in peaceful energy. People are also drawn to you and mostly confide in you with their deepest secrets.",
     paragraph3:
@@ -42,7 +42,7 @@ const contentData = [
       "observing the palm's natural topography. Fleshy areas called mounts and plains are related to different life themes. The classic mounts correspond with the seven classical planets within astrology: Apollo (the sun), Luna (the moon), Mercury, Venus, Mars, Jupiter, and Saturn. Rounded, slightly elevated mounts reveal attributes that are balanced and well-proportioned, while sunken mounts expose an individual's blind spots or underdeveloped qualities. Lastly, extremely prominent mounts reveal dominant characteristics that may be exaggerated or overemphasized.",
     header: "Look at the mounts.",
     imageSrc:
-      "https://www.webstrot.com/html/tm/astrologer/light_version/images/content/kundali/hand_img4.jpg",
+      "/images/service/plam/one4.jpg",
     paragraph2:
       "Located at the base of the index finger (and above the Mount of Inner Mars), the Mount of Jupiter symbolizes confidence, ambition, and leadership. It reveals a connection to the spiritual realm, along with divine aptitudes.The Mount of Saturn is located at the base of the middle finger. This area corresponds to wisdom, responsibility, and fortitude. It reveals an individual's integrity, as well as their deep understanding of the ups and downs of life.",
     paragraph3:
@@ -53,7 +53,7 @@ const contentData = [
       "Our palms naturally evolve over the course of our lives, but the fate line transforms the fastest. Also known as the line of destiny, the fate line is a vertical crease in the center of the palm that reveals the degree to which an individual's life will be influenced by external circumstances beyond their control.If the heart line begins below the index finger, it reveals content in relationships; if it begins below the middle finger, it reveals the potential for restlessness. The depth of the line signifies the significance of interpersonal relationships in an individual's life, while the length corresponds with time spent coupled . ",
     header: "Determine the hand shape.",
     imageSrc:
-      "https://www.webstrot.com/html/tm/astrologer/light_version/images/content/kundali/hand_img5.jpg",
+      "/images/service/plam/one5.jpg",
     paragraph2:
       "Whenever you're experiencing a massive shift, whether personal or professional, take a quick peek at the fate line. Has it changed? Palmists believe that itchy hands are a sign of upcoming shifts, so stay attuned to this physiological clue, as well.",
     paragraph3:

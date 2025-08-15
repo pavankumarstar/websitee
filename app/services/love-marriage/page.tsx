@@ -12,7 +12,7 @@ const contentData = [
     paragraph1:
       "Are your parents, society, or religion opposing your love marriage? Facing opposition in a love marriage can be emotionally draining, but astrology offers potential solutions by analyzing birth charts and suggesting remedies. Astrologers can identify the root causes of the opposition, such as family disapproval or relationship challenges, and offer guidance through rituals, mantras, or gemstone recommendations.",
     imageSrc:
-      "https://omaveda.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flove-marriage-parents-hero.376e35c2.jpg&w=2048&q=75",
+      "/images/service/marriage/third1.jpg",
     paragraph2:
       "Love marriages often face resistance due to caste, community, or family values. They assess planetary positions and alignments to pinpoint the specific reasons for family or societal opposition, such as incompatibility or negative planetary influences. Your heart sinks as you hear these words from your mother. You've been asking yourself 'will my parents agree for love marriage'.",
     paragraph3:
@@ -23,7 +23,7 @@ const contentData = [
     paragraph1:
       "Mangal dosha, Nadi dosha, or mismatched kundalis can delay or block love marriage. Marital life may face ups and downs due to planetary influences. Conflicts, lack of understanding, or extramarital affairs often arise due to Rahu-Ketu, Mercury, Mars or Saturn's negative influence. An experienced love problem solution astrologer can help restore trust and bring happiness to married life.",
     imageSrc:
-      "https://astrotalk.com/astrology-blog/wp-content/uploads/2023/05/couple-dawn-dusk-love.jpg",
+      "/images/service/marriage/third2.jpg",
     paragraph2:
       "Planetary positions like Venus and Moon play key roles in romantic success. Venus is primarily considered the planet most strongly associated with love and romance, and therefore plays a significant role in love marriages. However, other planets like Jupiter and Mars, as well as specific houses in the birth chart, also influence the dynamics of love and marriage.",
     paragraph3:
@@ -45,7 +45,7 @@ const contentData = [
     paragraph1:
       "Even after marriage, we offer spiritual help to maintain peace and love. To strengthen the bond in a love marriage, astrology suggests various remedies, including pleasing Venus (Shukra), examining birth charts, balancing Mars (Mangal), and appeasing the Moon (Chandra). Specific rituals like moonlit cleansing ceremonies, creating a Venus altar, and incorporating planetary hours can also deepen the emotional connection.",
     imageSrc:
-      "https://astropraveenkumar.com/wp-content/uploads/2025/02/Astrology-and-Relationship-Success-Will-Your-Love-Marriage-Last.png",
+      "/images/service/marriage/third3.jpg",
     paragraph2:
       "Get yantras, gemstone suggestions, or divine protection for your relationship. Examine both partners' birth charts to understand compatibility and potential challenges. Perform cleansing rituals under the moonlight, especially during a full moon, to purify and strengthen the bond.",
     paragraph3:
